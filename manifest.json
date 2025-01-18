@@ -1,0 +1,13 @@
+{
+  "name": "amwugrtのblog",
+  "short_name": "AmwuBlog",
+  "background_color": "#ffffff",
+  "icons": [{
+      "src": "./mainimage.jpg",
+      "sizes": "256x256",
+      "type": "image/png"
+    }],
+  "start_url": "/blog/",
+  "scope": "/blog/",
+  "display": "standalone"
+}

@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Top | AmwuBlog</title>
+	<meta name="description" content="いろいろあげます。" /><!-- metascription -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+	<link rel="icon" href="./mainimage.jpg" sizes="256x256" type="image/jpg" /><!-- サイトアイコン -->
+	<link rel="apple-touch-icon-precomposed" href="./mainimage.jpg" /><!-- ホーム画面ブックマークアプリアイコン -->
+	<meta name="msapplication-TileImage" content="./mainimage.jpg" /><!-- Windowsタイル -->
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<link rel="manifest" href="./manifest.json"><!-- App!!! -->
+	<link rel="stylesheet" type="text/css" href="./sanitize.css" /><!-- resetCSS -->
+	<link rel="stylesheet" type="text/css" href="./style.css" /><!-- mainCSS読み込み-->
+	<script>      
+		if (navigator.serviceWorker) {
+			navigator.serviceWorker.register ('./service_worker.js')
+		}
+	</script>
+	<meta name="format-detection" content="email=no, telephone=no, address=no" /><!-- 各種adress -->
+	<meta name="author" content="AmwuAgp & Takumi" /><!-- 作者名 -->
+	<!-- ↓ここから変更禁止↓ -->
+	<meta charset="utf-8" /><!-- 文字コード -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- metapointquest(responsivedesign) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- <link rel="canonical" href="正規化するURL" /> -->
+	<!-- <meta name="robots" content="noindex,nofollow" /> --><!-- meta robots -->
 </head>
 <body>
-  <p><a href="/craft/gikoubu/技工部旧HPデータ/芝学園技術工作部　公式ホームページ.html"></a></p>
+	<header class="cinzel">
+		<h1><a onclick="window.location.reload(true);" class="reload">Amwugrt Blog</a></h1>
+		<nav>
+			<ul class="nav">
+				<li><a onclick="window.location.reload(true);" class="reload">Top</a></li>
+				<li><a href="./personal">Personal</a></li>
+				<li><a href="./notes/">Tech</a></li>
+				<li><a href="./gikoubu">Gikoubu</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>ページ一覧</h2>
+			<p>当ブログでは、ジャンルごとにフォルダを分けています。</p>
+			<ul>
+				<h3><li><a href="./music">Music</a></li></h3>
+					<p>音楽関係で個人的なことをあげています。</p>
+				<h3><li><a href="./tech">Tech</a></li></h3>
+					<p>技術関係で個人的なことをあげています。</p>
+				<h3><li><a href="./gikoubu">Gikoubu</a></li></h3>
+					<p>技術工作部関係のものをあげています。閲覧にはパスワードもしくは共有されたURLが必要です。</p>
+				<h3><li><a href="./others">Others</a></li></h3>
+					<p>上記以外はここです。</p>
+			</ul>
+		<h2>更新履歴</h2>
+			<p>
+				2025/01/18 開設
+			</p>
+	</main>
+	<footer>
+		<p>&copy; 2025 amwugrt</p>
+	</footer>
 </body>
 </html>
