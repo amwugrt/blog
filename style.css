@@ -17,39 +17,76 @@ main{
 
 /* header */
 
-header{
-	width: 100%;
-	padding: 25px 2%;
-	position: fixed;
-	top: 0px;
-	display: flex;
-	align-items: center;
-}
+	header{
+		width: 100%;
+		padding: 25px 2%;
+		position: fixed;
+		top: 0px;
+		display: flex;
+		align-items: center;
+	}
 
-header h1{
-	font-size: 30px;
-	margin: 0;
-	padding: 0;
-}
+	header h1{
+		font-size: 30px;
+		margin: 0;
+		padding: 0;
+	}
 
-header a{
-	text-decoration: none;
-	color: black;
-}
+	header a{
+		text-decoration: none;
+		color: black;
+	}
 
-header ul{
-	list-style: none;
-	margin: 0 20px 0 0;
-	display: flex;
-}
+	header ul{
+		list-style: none;
+		margin: 0 20px 0 0;
+		display: flex;
+	}
 
-header li{
-	margin: 0 0 0 15px;
-	font-size: 14px;
-}
+	header li{
+		margin: 0 0 0 15px;
+		font-size: 14px;
+	}
 
-nav{
-	margin: 0 0 0 auto;
+	nav{
+		margin: 0 0 0 auto;
+	}
+
+@media screen and (max-width: 600px) {
+	header{
+		width: 100%;
+		padding: 10px 2%;
+		position: fixed;
+		top: 0px;
+		display: flex;
+		align-items: center;
+	}
+
+	header h1{
+		font-size: 15px;
+		margin: 0;
+		padding: 0;
+	}
+
+	header a{
+		text-decoration: none;
+		color: black;
+	}
+
+	header ul{
+		list-style: none;
+		margin: 0 10px 0 0;
+		display: flex;
+	}
+
+	header li{
+		margin: 0 0 0 10px;
+		font-size: 10px;
+	}
+
+	nav{
+		margin: 0 0 0 auto;
+	}
 }
 
 .reload{
@@ -94,6 +131,11 @@ a:hover{
 
 p{
 	margin: 5px 25px;
+}
+
+.img{
+	 text-align: center;
+	 width: 300px;
 }
 
 .bold{
