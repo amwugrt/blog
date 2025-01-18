@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-trackボードの制作 | AmwuBlog</title>
+	<meta name="description" content="いろいろあげます。" /><!-- metascription -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://amwugrt.github.io/blog/mainimage.jpg" sizes="256x256" type="image/jpg" /><!-- サイトアイコン -->
+	<link rel="apple-touch-icon-precomposed" href="https://amwugrt.github.io/blog/mainimage.jpg" /><!-- ホーム画面ブックマークアプリアイコン -->
+	<meta name="msapplication-TileImage" content="https://amwugrt.github.io/blog/mainimage.jpg" /><!-- Windowsタイル -->
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<link rel="manifest" href="https://amwugrt.github.io/blog/manifest.json"><!-- App!!! -->
+	<link rel="stylesheet" type="text/css" href="https://amwugrt.github.io/blog/sanitize.css" /><!-- resetCSS -->
+	<link rel="stylesheet" type="text/css" href="https://amwugrt.github.io/blog/style.css" /><!-- mainCSS読み込み-->
+	<script>      
+		if (navigator.serviceWorker) {
+			navigator.serviceWorker.register ('https://amwugrt.github.io/blog/service_worker.js')
+		}
+	</script>
+	<meta name="format-detection" content="email=no, telephone=no, address=no" /><!-- 各種adress -->
+	<meta name="author" content="AmwuAgp & Takumi" /><!-- 作者名 -->
+	<!-- ↓ここから変更禁止↓ -->
+	<meta charset="utf-8" /><!-- 文字コード -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- metapointquest(responsivedesign) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- <link rel="canonical" href="正規化するURL" /> -->
+	<!-- <meta name="robots" content="noindex,nofollow" /> --><!-- meta robots -->
+</head>
+<body>
+	<header class="cinzel">
+		<h1><a onclick="window.location.reload(true);" class="reload">Amwugrt Blog</a></h1>
+		<nav>
+			<ul class="nav">
+				<li><a href="https://amwugrt.github.io/blog/">Top</a></li>
+				<li><a href="https://amwugrt.github.io/blog/personal">Personal</a></li>
+				<li><a href="https://amwugrt.github.io/blog/notes/">Tech</a></li>
+				<li><a href="https://amwugrt.github.io/blog/gikoubu">Gikoubu</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>T-trackボードの制作</h1><p>2025/01/18</p>
+		<h2>大会への出展</h2>
+		<p>
+			部活動再開後、活動が安定するまでNゲージ班は大会等への出展を控えていましたが、そろそろ大会に出てもいいだろうということで、<span class="bold">参加費無料</span>の<a href="https://artfactory-j.wixsite.com/layoutaward">LAYOUT AWARD</a>という大会にでることになりました。大会の規定では、T-trackの規格のボードで出展できるので、T-trackボードをつくることにします。
+		</p>
+		<h2>CADでの設計</h2>
+		<p>
+			最もシンプルな作りで作れば中1にもできると思い、中1への教育も兼ねて最もシンプルな7枚の長方形の板で作ります。Fusion360で一番基本のスケッチを作成して長方形(もしくは直線)を引くという作業を覚えてもらいました。サイズは規定ギリギリの355×308×51mmです。高さの51mmは設置の必要があるアジャスターを調整できる余裕を持たせておくための横の板幅40mm + 底面5.5mm×2枚です。
+		</p>
+	</main>
+	<footer>
+		<p>&copy; 2025 amwugrt</p>
+	</footer>
+</body>
+</html>
