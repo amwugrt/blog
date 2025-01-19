@@ -156,3 +156,8 @@ h2 {
   background: transparent;
   border-left: solid 5px #5bc8ac;
 }
+
+img{
+	margin: 5px 5px;
+	max-width: 100%;
+}
