@@ -10,7 +10,7 @@ body{
 }
 
 main{
-	margin: 100px 15px 0 15px;
+	margin: 100px 100px 0 100px;
 }
 
 
@@ -87,6 +87,10 @@ main{
 	nav{
 		margin: 0 0 0 auto;
 	}
+
+	main{
+		margin: 50px 15px 0 15px;
+	}
 }
 
 .reload{
@@ -133,10 +137,6 @@ p{
 	margin: 5px 25px;
 }
 
-.img{
-	 text-align: center;
-	 width: 300px;
-}
 
 .bold{
 	font-weight: bold;
