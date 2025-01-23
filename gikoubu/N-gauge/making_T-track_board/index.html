@@ -1,1 +1,79 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-trackボードの制作 | AmwuBlog</title>
+	<meta name="description" content="2025-01-18 T-trackボードの制作についてまとめました。" /><!-- metascription -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://amwugrt.github.io/blog/mainimage.jpg" sizes="256x256" type="image/jpg" /><!-- サイトアイコン -->
+	<link rel="apple-touch-icon-precomposed" href="https://amwugrt.github.io/blog/mainimage.jpg" /><!-- ホーム画面ブックマークアプリアイコン -->
+	<meta name="msapplication-TileImage" content="https://amwugrt.github.io/blog/mainimage.jpg" /><!-- Windowsタイル -->
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<link rel="manifest" href="https://amwugrt.github.io/blog/manifest.json"><!-- App!!! -->
+	<link rel="stylesheet" type="text/css" href="https://amwugrt.github.io/blog/sanitize.css" /><!-- resetCSS -->
+	<link rel="stylesheet" type="text/css" href="https://amwugrt.github.io/blog/style.css" /><!-- mainCSS読み込み-->
+	<script>      
+		if (navigator.serviceWorker) {
+			navigator.serviceWorker.register ('https://amwugrt.github.io/blog/service_worker.js')
+		}
+	</script>
+	<meta name="format-detection" content="email=no, telephone=no, address=no" /><!-- 各種adress -->
+	<meta name="author" content="AmwuAgp & Takumi" /><!-- 作者名 -->
+	<!-- ↓ここから変更禁止↓ -->
+	<meta charset="utf-8" /><!-- 文字コード -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- metapointquest(responsivedesign) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body>
+	<header class="cinzel">
+		<h1><a href="https://amwugrt.github.io/blog/">Amwugrt Blog</a></h1>
+		<nav>
+			<ul class="nav">
+				<li><a href="./music/">Music</a></li>
+				<li><a href="./tech/">Tech</a></li>
+				<li><a href="./gikoubu/">Gikoubu</a></li>
+				<li><a href="./personal/">Personal</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>T-trackボードの制作</h1><p>2025/01/18</p>
+		<h2>大会への出展</h2>
+		<p>
+			部活動再開後、活動が安定するまでNゲージ班は大会等への出展を控えていましたが、そろそろ大会に出てもいいだろうということで、<span class="bold">参加費無料</span>の<a href="https://artfactory-j.wixsite.com/layoutaward">LAYOUT AWARD</a>という大会にでることになりました。大会の規定では、T-trackの規格のボードで出展できるので、T-trackボードをつくることにします。小さいサイズなので、大人数ではやりずらいのと、暇をする人が出ないよう今回の大会は1ボード1人か2人で制作することにします。合計4ボードの出展です。
+		</p>
+		<h2>CADでの設計</h2>
+		<p>
+			最もシンプルな作りで作れば中1にもできると思い、中1への教育も兼ねて最もシンプルな7枚の長方形の板で作ります。Fusion360で一番基本のスケッチを作成して長方形(もしくは直線)を引くという作業を覚えてもらいました。サイズは規定ギリギリの355×308×51mmです。高さの51mmは設置の必要があるアジャスターを調整できる余裕を持たせておくための横の板幅40mm + 底面5.5mm×2枚です。<br><br>
+			材料一覧　※材の厚みは5.5mm
+			<ul>
+				<li>355×308 1枚</li>
+				<li>355×40  2枚</li>
+				<li>297×40  2枚</li>
+				<li>308×50  2枚</li>
+			</ul>
+		</p>
+		<p><img src="./1.png" alt="中1が作ったCADのスクショ" style="width: 600px;"></p>
+		<h2>レーザー加工と組み立て</h2>
+		<p>
+			家庭科室に<a href="https://www.laserconnect.co.jp/products/edge/">新しいレーザー加工機</a>が来たので、これを使ってみます。これのいいところは、パワーが強いところ、位置、サイズが正確で精度がいいところです。メーカーの講習を受けた人でないと扱えないので、顧問の先生の立ち会いのもと行います。レーザー加工機専用にしている。パソコンにデータを近距離共有で送れます。便利。ファイル形式は.dxfです。fusion360のエクスポートから直接出力できます。<br>
+			<img src="2.JPEG" style="width: 400px;">
+		</p>
+		<p>組み立ては側面の板をコーナークランプなどで固定してボンドで接着し、上面と下面を取り付ければ完成です。今回はMDF板を使いましたが、もともとのMDF板がしなっており、固定が大変でした。なるべく平らで歪んでいない板を使うことをおすすめします。</p>
+		<h2>アジャスターの制作</h2>
+		<p>
+			ボードには、線路面の高さが接地面から70~100mmで調整できる必要があります。一昨年個人的に出展した<a href="https://www.moraco.jp/">鉄道模型コンテスト</a>のT-track部門では、ボルトを使ったアジャスターで調整しており、これを参考に作ってみたいと思います。<br>
+			まず、ボルトを挿せるネジ穴がボードの底面にある必要があります。鉄コンでは爪付きナットをボードに取り付ける形でネジ穴を作っていました。しかし、爪付きナットを使うといざ大量生産することになると値が張ります。そこで、3Dプリンターを用いてナットを木材に固定できるような部品を作りそこにボルトを挿し込めるような形にしました。直径20mmの円柱に直径13mm(M8ナットの外径)の6角形の穴を開け、下面にボードの底面と引っかかるような爪を、上面にナットが引っかかるような爪を取り付けたような形にしました。（写真は試作品）<br>
+			<img src="./4.JPEG" style="width: 400px;"><img src="./5.JPEG" style="width: 400px;"><br><br>
+			量産しました。ナットもぴったり。<br>
+			<img src="many.JPEG" style="width: 400px;"><img src="just.JPEG" style="width: 400px;"><br><br>
+			あとは本体にレーザー加工機で直径20mmの穴を開け（次回からは最初の切り出しで開ける）、接着したら完成です。<br>
+			<img src="set.JPEG" style="width: 400px;"><img src="comp.JPEG" style="width: 400px;"><img src="view.JPEG" style="width: 600px;">
+		</p>
+	</main>
+	<footer>
+		<p>&copy; 2025 amwugrt</p>
+	</footer>
+</body>
+</html>
